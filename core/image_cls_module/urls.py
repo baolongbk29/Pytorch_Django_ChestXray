@@ -6,5 +6,5 @@ from . import views
 app_name = 'image_cls_module'
 urlpatterns = [
     # two paths: with or without given image
-    path('', views.index, name='index'),
+    path('predict/', views.index, name='index'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
